@@ -1,0 +1,14 @@
++ ported from madwifi-maica to linux-wireless
+needs more testing
+
++ You can the implementation in 
+
+net/mac80211/rc80211_maica.{h,c}
+
++ I made modifications to the following files
+config.mk
+include/linux/compat_autoconf.h
+net/mac80211/Makefile
+net/mac80211/rate.h
+net/mac80211/main.c
+

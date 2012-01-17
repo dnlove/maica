@@ -1,6 +1,8 @@
 + ported from madwifi-maica to linux-wireless
 needs more testing
 
++ I package into compat-wireless-3.0-2 for portability and easy testing
+
 + You can the implementation in 
 
 net/mac80211/rc80211_maica.{h,c}

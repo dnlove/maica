@@ -1,0 +1,4 @@
+kernel//home/duy/maica-compat-wireless-3.0-2/drivers/net/wireless/ath/ath9k/ath9k.ko
+kernel//home/duy/maica-compat-wireless-3.0-2/drivers/net/wireless/ath/ath9k/ath9k_hw.ko
+kernel//home/duy/maica-compat-wireless-3.0-2/drivers/net/wireless/ath/ath9k/ath9k_common.ko
+kernel//home/duy/maica-compat-wireless-3.0-2/drivers/net/wireless/ath/ath9k/ath9k_htc.ko

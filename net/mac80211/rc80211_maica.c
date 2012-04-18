@@ -268,7 +268,6 @@ maica_tx_status(void *priv, struct ieee80211_supported_band *sband,
 		mi->maica_tx_retr += ar[0].count;
 
 
-        maica_check_rate (mi);
 
  	//printk(KERN_DEBUG "maica_tx_status rate=%2d err=%2d ok=%2d retr=%2d suc=%2d\n", mi->cur_rateidx, mi->maica_tx_err,mi->maica_tx_ok, mi->maica_tx_retr,success);
 }
@@ -308,8 +307,10 @@ maica_get_rate(void *priv, struct ieee80211_sta *sta,
 	mrr = mp->has_mrr && !txrc->rts && !txrc->bss_conf->use_cts_prot;
 
 	if (time_after(jiffies, mi->stats_update + (mp->update_interval *
-			HZ) / 1000))
+			HZ) / 1000)) {
 		maica_update_stats(mp, mi);
+        	maica_check_rate (mi);
+	}
 
  	//printk(KERN_DEBUG "maica_get_rate %2d\n", mi->cur_rateidx);
 
